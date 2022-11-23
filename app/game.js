@@ -43,7 +43,7 @@ fetch("questions.json")
         questions = loadedQuestions;
         let selectQuestions = [];
         for (let i = 0; i < 4; i++) {
-            e = Math.round(Math.random()*11);
+            e = Math.round(Math.random()*17);
             selectQuestions [i] = questions[e];       
         }
         // console.log(selectQuestions)

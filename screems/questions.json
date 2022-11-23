@@ -86,5 +86,53 @@
     "choice3": "Azul",
     "choice4": "Plata",
     "answer": 2
+  },
+  {
+    "question": "¿Cuál fue el título original de la película de Star Wars?",
+    "choice1": "Batallas de estrellas",
+    "choice2": "Aventuras de Luke Starkiller",
+    "choice3": "Las aventuras de los Jedi",
+    "choice4": "Batallas en el espacio",
+    "answer": 2
+  },
+  {
+    "question": "¿Qué apodo llama Han Solo a Luke Skywalker que lo vuelve loco?",
+    "choice1": "buckaroo",
+    "choice2": "Lukie",
+    "choice3": "Skydancer",
+    "choice4": "Niño",
+    "answer": 4
+  },
+  {
+    "question": "¿Quién da el golpe final que destruye la segunda Estrella de la Muerte?",
+    "choice1": "Han Solo con un X-Wing",
+    "choice2": "Luke Skywalker con un Speeder",
+    "choice3": "Jar Jar Binks con un ala en Y",
+    "choice4": "Lando Calrissian con el Halcón Milenario",
+    "answer": 4
+  },
+  {
+    "question": "¿Quién hizo estallar la primera Estrella de la Muerte y con qué arma?",
+    "choice1": "Luke Skywalker con su sable de luz",
+    "choice2": "Princesa Leia con un X-Wing",
+    "choice3": "Luke Skywalker con un X-Wing",
+    "choice4": "Princesa Leia con un detonador térmico",
+    "answer": 3
+  },
+  {
+    "question": "¿Quién adoptó a la hija de Padmé Amidala?",
+    "choice1": "Bail Organa",
+    "choice2": "Capitán Antilles",
+    "choice3": "Owen y Beru Lars",
+    "choice4": "Gidean Danu",
+    "answer": 1
+  },
+  {
+    "question": "Quien dice: <Somos la chispa que encenderá el fuego que quemará a la Primera Orden>.",
+    "choice1": "Rose Tico",
+    "choice2": "Poe Dameron",
+    "choice3": "Almirante Holdo",
+    "choice4": "Almirante Ackbar",
+    "answer": 2
   }
 ]

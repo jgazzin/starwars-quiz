@@ -27,7 +27,7 @@ function agregarNivel (highScores) {
 
 highScoresList.innerHTML = highScores
   .map(score => {
-    return `<li class="high-score">${score.name} - ${score.score} - ${agregarNivel(highScores)}</li>`;
+    return `<li class="high-score">${score.name} - ${score.score}  ${agregarNivel(highScores)}</li>`;
   })
   .join("");
 
