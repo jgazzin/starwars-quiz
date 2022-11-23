@@ -90,6 +90,7 @@ h3 {
   border-radius: 10px;
   margin-bottom: 1rem;
   text-decoration: none;
+  text-transform: uppercase;
   color: black;
   background-color: white;
 }
@@ -254,7 +255,42 @@ input::placeholder {
   list-style: none;
   padding-left: 0;
   margin-bottom: 4rem;
+  text-align: center;
+
+  width: 450px;
+  max-height: 130px;
+  overflow: auto;
 }
+
+/* Estilos de barra scrool*/
+
+#highScoresList::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+#highScoresList::-webkit-scrollbar:vertical {
+  width:5px;
+}
+#highScoresList::-webkit-scrollbar:horizontal {
+  height:1px;
+}
+
+#highScoresList::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+  display: none;
+} 
+
+#highScoresList::-webkit-scrollbar-thumb {
+  background-color: #797979;
+  border-radius: 20px;
+  border: 2px solid var(--color-text);
+}
+
+#highScoresList::-webkit-scrollbar-track {
+  border-radius: 10px;  
+}
+
+
+
 
 .high-score {
   font-size: 2.8rem;

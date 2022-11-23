@@ -10,29 +10,32 @@
   <body>
     <div class="container">
       <div id="end" class="flex-center flex-column">
+        <div id="hud-item" class="flex-center">
+          <p class="hud-prefix">
+            Jugador:
+          </p>
+
+          <h1 class="hud-main-text" id="name">
+            name
+          </h1>
+
+        </div>
         <h1 id="finalScore"></h1>
-        <form>
-          <input
-            type="text"
-            name="username"
-            id="username"
-            placeholder="username"
-          />
-          <button
-            type="submit"
-            class="btn"
-            id="saveScoreBtn"
-            onclick="saveHighScore(event)"
-            disabled
-          >
-            Save
-          </button>
-        </form>
-        <a class="btn" href="./game.html">Play Again</a>
-        <a class="btn" href="/">Go Home</a>
-        <a class="btn" href="screems/highscores.html">Puntajes</a>
+        <button
+          type="submit"
+          class="btn"
+          id="saveNameBtn"
+          onclick="saveHighScore(event)">
+          Guardar
+        </button>
+        
+        <a class="btn" href="/">Inicio</a>
+        <a class="btn" href="./highscores.html">Puntajes</a>
       </div>
     </div>
+
+    <!-- libreria sweetalert2 -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="../app/end.js"></script>
 
     <footer class="grupo">

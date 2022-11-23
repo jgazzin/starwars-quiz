@@ -5,9 +5,31 @@ const choices = Array.from(document.getElementsByClassName('choice-text'));
 const progressText = document.getElementById('progressText');
 const scoreText = document.getElementById('score');
 const progressBarFull = document.getElementById('progressBarFull');
+const nameJugador = document.querySelector("#name");
+
+// obteniendo datos
+var highScores = JSON.parse(localStorage.getItem('highScores'));
+var jugadorActual = JSON.parse(localStorage.getItem('jugadorActual'));
+console.log(highScores)
+console.log(jugadorActual)
+
+// comparar datos
+console.log(highScores)
+highScores.forEach((user, position) => {
+if (jugadorActual.name === user.name) {
+    jugadorActual.score = user.score > jugadorActual.score ? user.score : jugadorActual.score;
+    scoreText.innerText = jugadorActual.score;
+    nameJugador.innerHTML = jugadorActual.name;
+    // borrar user
+    console.log(position)
+    highScores.splice(position, 1);
+}
+});
+
+
 let currentQuestion = {};
 let acceptingAnswers = false;
-let score = 0;
+let score = jugadorActual.score;
 let questionCounter = 0;
 let availableQuesions = [];
 
@@ -24,7 +46,7 @@ fetch("questions.json")
             e = Math.round(Math.random()*11);
             selectQuestions [i] = questions[e];       
         }
-        console.log(selectQuestions)
+        // console.log(selectQuestions)
         startGame();
     })
     .catch((err) => {
@@ -32,19 +54,22 @@ fetch("questions.json")
     });
 
 //CONSTANTS
-const CORRECT_BONUS = 10;
+const CORRECT_BONUS = 5;
 const MAX_QUESTIONS = 4;
 
 startGame = () => {
     questionCounter = 0;
-    score = 0;
+    score = jugadorActual.score;
     availableQuesions = [...questions];
     getNewQuestion();
 };
 
 getNewQuestion = () => {
     if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) {
-        localStorage.setItem('mostRecentScore', score);
+        jugadorActual.score = score;
+
+        localStorage.setItem("jugadorActual", JSON.stringify(jugadorActual))
+        localStorage.setItem('highScores', JSON.stringify(highScores));
         //go to the end page
         return window.location.assign('end.html');
     }
@@ -56,12 +81,6 @@ getNewQuestion = () => {
     const questionIndex = Math.floor(Math.random() * availableQuesions.length);
     currentQuestion = availableQuesions[questionIndex];
     question.innerText = currentQuestion.question;
-
-    // let currentChoices = availableQuesions[questionIndex].choices;
-    // let i = 0;
-    // choices.forEach((choice) => {
-    //     choice.innerText = currentChoices[i++];
-    // })
 
     choices.forEach((choice) => {
         const number = choice.dataset['number'];
@@ -100,3 +119,5 @@ incrementScore = (num) => {
     score += num;
     scoreText.innerText = score;
 };
+
+
