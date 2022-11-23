@@ -2,10 +2,10 @@
 const saveScoreBtn = document.getElementById('saveScoreBtn');
 const finalScore = document.getElementById('finalScore');
 // const mostRecentScore = localStorage.getItem('mostRecentScore');
-const jugadorActual = JSON.parse(localStorage.getItem('jugadorActual'));
+var jugadorActual = JSON.parse(localStorage.getItem('jugadorActual'));
 const nameJugador = document.querySelector("#name");
 
-const highScores = JSON.parse(localStorage.getItem('highScores'));
+var highScores = JSON.parse(localStorage.getItem('highScores'));
 
 // listar solo 5
 // const MAX_HIGH_SCORES = 5;
