@@ -1,0 +1,90 @@
+[
+  {
+    "question": "¿Qué le pasó a Anakin Skywalker durante la batalla con el Conde Dooku?",
+    "choice1": "Perdió su pierna izquierda",
+    "choice2": "Perdió su brazo derecho",
+    "choice3": "Perdió su pierna derecha",
+    "choice4": "Él perdió",
+    "answer": 2
+  },
+  {
+    "question": "¿Qué perdió Luke Skywalker en su pelea con Darth Vader?",
+    "choice1": "Su mano izquierda",
+    "choice2": "Su pie izquierdo",
+    "choice3": "Su mano derecha",
+    "choice4": "Su pierna izquierda",
+    "answer": 3
+  },
+  {
+    "question": "Según el Emperador, ¿cuál era la debilidad de Luke Skywalker?",
+    "choice1": "Su fe en el Lado Luminoso de la Fuerza",
+    "choice2": "Su fe en sus amigos",
+    "choice3": "Su falta de visión",
+    "choice4": "Su resistencia al Lado Oscuro de la Fuerza",
+    "answer": 2
+  },
+  {
+    "question": "¿Dónde comenzaron las Guerras Clon?",
+    "choice1": "Tatooine",
+    "choice2": "Geonosis",
+    "choice3": "Naboo",
+    "choice4": "coruscant",
+    "answer": 2
+  },
+  {
+    "question": "¿Qué película de Star Wars tiene esta cita: <¡He estado en esta pelea desde que tenía seis años!>",
+    "choice1":"Star Wars: una nueva esperanza",
+    "choice2": "Star Wars: The Rise of Skywalker",
+    "choice3": "Rogue Uno: Una historia de Star Wars",
+    "choice4": "Solo: Una historia de Star Wars",
+    "answer": 3
+  },
+  {
+    "question": "¿Qué acabó debiendo Jar Jar Binks a Qui-Gon Jinn tras ser rescatado por el mismo durante la invasión de Naboo?",
+    "choice1": "Un viaje a Otoh Gunga",
+    "choice2": "Un bongo",
+    "choice3": "Una deuda de vida",
+    "choice4": "Créditos 9,000",
+    "answer": 3
+  },
+  {
+    "question": "¿Qué le dijo Owen Lars a Luke Skywalker sobre su padre?",
+    "choice1": "Había sido un Caballero Jedi",
+    "choice2": "Había sido un Lord Sith",
+    "choice3": "Era un navegante en un carguero de especias",
+    "choice4": "Era un piloto de combate",
+    "answer": 3
+  },
+  {
+    "question": "¿Cuál es el arma preferida de Chewbacca?",
+    "choice1": "Rifle bláster",
+    "choice2": "Sable de luz",
+    "choice3": "Club de metal",
+    "choice4": "Bowcaster",
+    "answer": 4
+  },
+  {
+    "question": "¿Cómo se llama el Lord Sith de cabeza puntiaguda que sostiene un genial sable de luz de doble hoja?",
+    "choice1": "Darth Vader",
+    "choice2": "Darth Mutilar",
+    "choice3": "darth pablo",
+    "choice4": "Darth Garth",
+    "answer": 2
+  },
+  {
+    "question": "¿Cuáles son las criaturas que viven en Endor que ayudaron a los rebeldes a derrotar a la segunda Estrella de la Muerte?",
+    "choice1": "Ewoks",
+    "choice2": "Wookies",
+    "choice3": "Pastores de Nerf",
+    "choice4": "Jawas",
+    "answer": 1
+  },
+  {
+    "question": "¿De qué color es el brazo de C-3PO en Star Wars: The Force Awakens?",
+    "choice1": "Negro",
+    "choice2": "Rojo",
+    "choice3": "Azul",
+    "choice4": "Plata",
+    "answer": 2
+  }
+]
