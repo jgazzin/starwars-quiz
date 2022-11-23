@@ -46,12 +46,12 @@ h3 {
 
 .container {
   width: 100vw;
-  height: 100vh;
+  height: calc(100vh-30px);
   display: flex;
   justify-content: center;
   align-items: center;
   max-width: 80rem;
-  margin: 0 auto;
+  margin: 0 auto 40px;
   padding: 2rem;
 }
 
