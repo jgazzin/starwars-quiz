@@ -32,9 +32,10 @@ h1 > span {
 }
 
 h2 {
-  font-size: 4.2rem;
+  font-size: 4rem;
   /* margin-bottom: 4rem; */
   font-weight: 700;
+  margin-bottom: 10px;
 }
 
 h3 {
@@ -45,11 +46,11 @@ h3 {
 /* UTILITIES */
 
 .container {
-  width: 100vw;
+  width: 90%;
   height: calc(100vh-30px);
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   max-width: 80rem;
   margin: 0 auto 40px;
   padding: 2rem;
@@ -125,7 +126,7 @@ input {
   box-shadow: 0 0.1rem 1.4rem 0 rgba(var(--color-text), 0.576);
   text-align: center;
   color: black;
-
+  box-sizing: border-box;
 }
 
 input::placeholder {
@@ -136,7 +137,7 @@ input::placeholder {
 /* --- header ---*/
 .logo {
   width: 250px;
-  margin: 0 auto 50px;
+  margin: 20px auto 30px;
 }
 
 /* --- reglas ---  */
@@ -144,10 +145,17 @@ input::placeholder {
 .reglas {
   max-height:300px;
   width: 80%;
+  margin: 30px auto 10px;
 
   text-align: center;
   font-size: 14px;
 
+  opacity: 5%;
+}
+
+.reglas:hover {
+  opacity: 90%;
+  transition: 3s;
 }
 
 .reglas li {
@@ -183,19 +191,6 @@ input::placeholder {
   border: none;
 }
 
-@media (max-width: 580px) {
-  footer {
-    height: auto;
-    flex-direction: column;
-    justify-content: center;
-    padding: 10px 0;
-  }
-
-  .grupo p {
-      border: none;
-  }
-  
-}
 
 /* --- game.html ---*/
 .choice-container {
@@ -241,6 +236,18 @@ input::placeholder {
   justify-content: space-between;
   align-items: start;
   margin-bottom: 4rem;
+}
+
+@media (max-width: 580px) {
+    #hud {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    h2 {
+      font-size: 30px;
+    }
 }
 
 .hud-prefix {
