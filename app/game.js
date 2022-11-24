@@ -18,14 +18,15 @@ console.log(highScores)
 highScores.forEach((user, position) => {
 if (jugadorActual.name === user.name) {
     jugadorActual.score = user.score > jugadorActual.score ? user.score : jugadorActual.score;
-    scoreText.innerText = jugadorActual.score;
-    nameJugador.innerHTML = jugadorActual.name;
+
     // borrar user
     console.log(position)
     highScores.splice(position, 1);
 }
 });
 
+scoreText.innerText = jugadorActual.score;
+nameJugador.innerHTML = jugadorActual.name;
 
 let currentQuestion = {};
 let acceptingAnswers = false;

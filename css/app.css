@@ -139,6 +139,22 @@ input::placeholder {
   margin: 0 auto 50px;
 }
 
+/* --- reglas ---  */
+
+.reglas {
+  max-height:300px;
+  width: 80%;
+
+  text-align: center;
+  font-size: 14px;
+
+}
+
+.reglas li {
+  list-style: none;
+}
+
+
 /* --- footer --- */
 .grupo {
   background-color: var(--color-text);
