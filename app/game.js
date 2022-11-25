@@ -14,7 +14,7 @@ console.log(highScores)
 console.log(jugadorActual)
 
 // comparar datos
-console.log(highScores)
+// console.log(highScores)
 highScores.forEach((user, position) => {
 if (jugadorActual.name === user.name) {
     jugadorActual.score = user.score > jugadorActual.score ? user.score : jugadorActual.score;
@@ -43,13 +43,15 @@ fetch("questions.json")
     .then((loadedQuestions) => {
         questions = loadedQuestions;
         // carga solo 4
-        let selectQuestions = [];
-        for (let i = 0; i < 4; i++) {
-            e = Math.floor(Math.random()*17);
-            selectQuestions [i] = questions[e]; 
-        }
-        questions = selectQuestions;
-        console.log(questions)
+        // let selectQuestions = [];
+        // for (let i = 0; i < 4; i++) {
+        //     e = Math.floor(Math.random()*17);
+        //     selectQuestions [i] = questions[e]; 
+        //     questions.splice(questions[e],1)
+        //     // console.log(questions)
+        // }
+        // questions = selectQuestions;
+        // console.log(questions)
         startGame();
     })
     .catch((err) => {
@@ -83,6 +85,7 @@ getNewQuestion = () => {
 
     const questionIndex = Math.floor(Math.random() * availableQuesions.length);
     currentQuestion = availableQuesions[questionIndex];
+    console.log(availableQuesions.length);
     question.innerText = currentQuestion.question;
 
     choices.forEach((choice) => {
@@ -90,6 +93,7 @@ getNewQuestion = () => {
         choice.innerText = currentQuestion['choice' + number];
     });
 
+    // la borra para no repetir
     availableQuesions.splice(questionIndex, 1);
     acceptingAnswers = true;
 };
